@@ -1,0 +1,39 @@
+server,property,value,evidence,source,note
+ReadyMedia (MiniDLNA),search,yes,verified-code,https://sourceforge.net/p/minidlna/git/ci/1a9b32ee7a1c89e54e9f148199b73f9b33ad45ba/tree/upnpsoap.c,"SearchCaps: dc:creator, dc:date, dc:title, upnp:album, upnp:actor, upnp:artist, upnp:class, upnp:genre, @id, @parentID, @refID"
+ReadyMedia (MiniDLNA),text_search,yes,verified-code,https://sourceforge.net/p/minidlna/git/ci/1a9b32ee7a1c89e54e9f148199b73f9b33ad45ba/tree/upnpsoap.c,
+ReadyMedia (MiniDLNA),counts_total_matches,yes,verified-code,https://sourceforge.net/p/minidlna/git/ci/1a9b32ee7a1c89e54e9f148199b73f9b33ad45ba/tree/upnpsoap.c,get_child_count for Browse; count(distinct DETAIL_ID) for Search
+ReadyMedia (MiniDLNA),stable_ids,across restarts; renumbered by a full database rebuild,verified-code,https://sourceforge.net/p/minidlna/git/ci/1a9b32ee7a1c89e54e9f148199b73f9b33ad45ba/tree/scanner.c,sequential parent$HEX IDs from get_next_available_id
+ReadyMedia (MiniDLNA),emits_refid,yes,verified-code,https://sourceforge.net/p/minidlna/git/ci/1a9b32ee7a1c89e54e9f148199b73f9b33ad45ba/tree/upnpsoap.c,REF_ID column; search results de-duplicated per file
+Gerbera,search,yes,verified-code,https://github.com/gerbera/gerbera/blob/cce1d4025640941e543dd8f578f9158fabd90019/src/upnp/cont_dir_service.cc,
+Gerbera,text_search,yes,verified-code,https://github.com/gerbera/gerbera/blob/cce1d4025640941e543dd8f578f9158fabd90019/src/upnp/cont_dir_service.cc,capabilities defined by the database layer
+Gerbera,counts_total_matches,yes,verified-code,https://github.com/gerbera/gerbera/blob/cce1d4025640941e543dd8f578f9158fabd90019/src/upnp/cont_dir_service.cc,
+Gerbera,stable_ids,database IDs; stable across restarts assumed,unverified,,
+Gerbera,emits_refid,not found,unverified,https://github.com/gerbera/gerbera/blob/cce1d4025640941e543dd8f578f9158fabd90019/src/upnp/xml_builder.cc,
+Gerbera,change_events,ContainerUpdateIDs and SystemUpdateID,verified-code,https://github.com/gerbera/gerbera/blob/cce1d4025640941e543dd8f578f9158fabd90019/src/upnp/cont_dir_service.cc,
+Jellyfin DLNA plugin,search,yes,verified-code,https://github.com/jellyfin/jellyfin-plugin-dlna/blob/21cd9fcee1b9bc017e766de4d10111a9deb71d5d/src/Jellyfin.Plugin.Dlna/ContentDirectory/ControlHandler.cs,
+Jellyfin DLNA plugin,text_search,yes,verified-code,https://github.com/jellyfin/jellyfin-plugin-dlna/blob/21cd9fcee1b9bc017e766de4d10111a9deb71d5d/src/Jellyfin.Plugin.Dlna/ContentDirectory/ControlHandler.cs,"broad SearchCaps incl. dc:title, upnp:artist, upnp:album, upnp:genre, @refID"
+Jellyfin DLNA plugin,counts_total_matches,yes,verified-code,https://github.com/jellyfin/jellyfin-plugin-dlna/blob/21cd9fcee1b9bc017e766de4d10111a9deb71d5d/src/Jellyfin.Plugin.Dlna/ContentDirectory/ControlHandler.cs,
+Jellyfin DLNA plugin,stable_ids,yes: MD5(type + path); a moved or renamed file gets a new ID,verified-code,https://github.com/jellyfin/jellyfin/blob/a45d1415d4da7c9b69d6e7a6895fc63d2d68e8f1/Emby.Server.Implementations/Library/LibraryManager.cs,
+Jellyfin DLNA plugin,emits_refid,no,verified-code,https://github.com/jellyfin/jellyfin-plugin-dlna/blob/21cd9fcee1b9bc017e766de4d10111a9deb71d5d/src/Jellyfin.Plugin.Dlna/Didl/DidlBuilder.cs,only a '// refID?' comment
+Kodi,search,class only,verified-code,https://github.com/xbmc/xbmc/blob/0929e56b09c852df85669e5c421d2a75b84b2f4d/xbmc/network/upnp/UPnPServer.cpp,SearchCapabilities = upnp:class; audioItem search optionally filtered by exact genre/album/artist name
+Kodi,text_search,no,verified-code,https://github.com/xbmc/xbmc/blob/0929e56b09c852df85669e5c421d2a75b84b2f4d/xbmc/network/upnp/UPnPServer.cpp,
+Kodi,counts_total_matches,assumed yes,unverified,,
+Kodi,stable_ids,library database IDs (musicdb://songs/<id>); stable until the library is rebuilt assumed,unverified,,
+Kodi,emits_refid,yes,verified-code,https://github.com/xbmc/xbmc/blob/0929e56b09c852df85669e5c421d2a75b84b2f4d/xbmc/network/upnp/UPnPInternal.cpp,m_ReferenceID
+Universal Media Server,search,yes,verified-code,https://github.com/UniversalMediaServer/UniversalMediaServer/blob/1b1cb16dce26a40da3774bf3bc31202a1049e25d/src/main/java/net/pms/network/mediaserver/jupnp/support/contentdirectory/UmsContentDirectoryService.java,
+Universal Media Server,text_search,yes,verified-code,https://github.com/UniversalMediaServer/UniversalMediaServer/blob/1b1cb16dce26a40da3774bf3bc31202a1049e25d/src/main/java/net/pms/network/mediaserver/jupnp/support/contentdirectory/UmsContentDirectoryService.java,"upnp:class, dc:title, dc:creator, upnp:artist, upnp:album, upnp:genre"
+Universal Media Server,counts_total_matches,not checked,unverified,,
+Universal Media Server,stable_ids,yes: persisted in database table MediaTableStoreIds,verified-code,https://github.com/UniversalMediaServer/UniversalMediaServer/blob/1b1cb16dce26a40da3774bf3bc31202a1049e25d/src/main/java/net/pms/store/MediaStoreIds.java,
+Universal Media Server,emits_refid,not found,unverified,,
+Universal Media Server,change_events,SystemUpdateID only (no LastChange found),verified-code,https://github.com/UniversalMediaServer/UniversalMediaServer/blob/1b1cb16dce26a40da3774bf3bc31202a1049e25d/src/main/java/net/pms/network/mediaserver/jupnp/support/contentdirectory/UmsContentDirectoryService.java,
+Windows Media sharing,search,yes,verified-spec,https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-dlnhnd/28e72c9b-225b-42ec-8891-bc7f7e220e8e,"""The DMS MUST process Browse and Search UPnP actions"""
+Windows Media sharing,response_cap,"204,800 bytes per Browse/Search response (unless the client sets WMC_COMPAT_DO_NOT_LIMIT_RESPONSE_SIZE)",verified-spec,https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-dlnhnd/28e72c9b-225b-42ec-8891-bc7f7e220e8e,
+Windows Media sharing,stable_ids,not documented,unverified,,
+Twonky,search,reportedly yes,documented-secondary,https://twonkydocs.atlassian.net/wiki/spaces/TS/overview,
+Twonky,response_cap,500 items per request,verified-issue,https://github.com/home-assistant/core/issues/113746,HA showed exactly 500 artists
+MinimServer,search,yes (newer versions),documented-vendor,https://minimserver.com/ug-other.html,
+MinimServer,browse_tree,no standard tree; flexible tag-based browsing,documented-vendor,https://minimserver.com/upnpav.html,"""There's no UPnP standard for what the browse tree should look like"""
+Plex (DLNA server),all,not verified,unverified,,closed source; no documentation found
+Emby,all,not verified,unverified,,closed source
+Serviio,all,not verified,unverified,,closed source
+JRiver Media Center,all,not verified,unverified,,closed source

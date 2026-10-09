@@ -1,0 +1,16 @@
+commit,date,author,subject,matching_changed_lines,found_in_branches
+507959104402,2021-05-31,"Michael ""Chishm"" Chisholm",Add DmsDevice to interface with DLNA Media Servers,29,chishm/dlna-dms-old
+5b0a8f9a9160,2023-05-21,PhracturedBlue,Initial event subscription support,22,PhracturedBlue/server
+df69d7cc1033,2023-06-23,PhracturedBlue,Initial event subscription support,22,PhracturedBlue/server_events
+48ac92f93d2f,2026-09-15,ssltg,Handle malformed DIDL-Lite metadata gracefully,8,ssltg/fix/malformed-dlna-metadata
+7cb9dbfbf058,2023-06-23,PhracturedBlue,Enable media_server example to use template variables,5,PhracturedBlue/server_events
+074c2a39e773,2023-05-25,PhracturedBlue,Defer subscription event trigger if needed.  Reorganize code,4,PhracturedBlue/server
+83a145eb8efd,2023-06-23,PhracturedBlue,Defer subscription event trigger if needed.  Reorganize code,4,PhracturedBlue/server_events
+44fd18528477,2025-12-18,mastikamastika,Fix: Handle missing 'song' namespace in DLNA metadata,4,mastikamastika/development mastikamastika/fix-dlna-unbound-prefix
+a406335743ea,2025-12-18,mastikamastika,Fix unbound prefix error for song namespace in DLNA profiles,4,mastikamastika/development mastikamastika/fix-dlna-unbound-prefix
+9009199e9603,2021-09-22,Steven Looman,Parse and store embedded devices,2,Flameeyes/embedded_device_support RichardGaleSonos/embedded_device_support bdraco/device_e bdraco/embedded_device_support frenck/embedded_device_support
+5a03449cc245,2021-11-28,Steven Looman,WIP Clean up `aiohttp.AiohttpNotifyServer`/`event_handler.UpnpEventHandler`,2,RichardGaleSonos/fix_ssdp_listener_ipv6
+e3c9474eedbc,2019-03-05,Steven Looman,Improve constructing metadata when playing media on DLNA/DMR devices (WIP),2,scop/travis
+3197a708940a,2026-04-10,MacTheFork,add more functions returning State Variables,1,MacTheFork/development MacTheFork/extend_testing_to_use_soap_action MacTheFork/support_ma
+85ee76b5f403,2023-05-22,PhracturedBlue,Add server tests,1,PhracturedBlue/server
+093e9bb1243e,2023-06-23,PhracturedBlue,Add server tests,1,PhracturedBlue/server_events
