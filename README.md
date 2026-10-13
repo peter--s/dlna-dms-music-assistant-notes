@@ -231,16 +231,16 @@ A probe script using `DmsDevice`:
 - Microsoft MS-DLNHND, Browse/Search handling and the 204,800-byte cap: https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-dlnhnd/28e72c9b-225b-42ec-8891-bc7f7e220e8e
 
 **Server source code and documentation**
-- ReadyMedia `upnpsoap.c` (SearchCaps, `refID`, counts): https://sourceforge.net/p/minidlna/git/ci/1a9b32ee7a1c89e54e9f148199b73f9b33ad45ba/tree/upnpsoap.c
-- ReadyMedia `scanner.c` (sequential object IDs): https://sourceforge.net/p/minidlna/git/ci/1a9b32ee7a1c89e54e9f148199b73f9b33ad45ba/tree/scanner.c
+- ReadyMedia `upnpsoap.c` (SearchCaps, `refID`, counts): https://sourceforge.net/p/minidlna/git/ci/1a9b32ee7a1c89e54e9f148199b73f9b33ad45ba/tree/upnpsoap.c (archived copy: [Software Heritage](https://archive.softwareheritage.org/swh:1:cnt:20f6b60342aff1d747da6653a61a7d335c48397f;origin=https://git.code.sf.net/p/minidlna/git;anchor=swh:1:rev:1a9b32ee7a1c89e54e9f148199b73f9b33ad45ba;path=/upnpsoap.c))
+- ReadyMedia `scanner.c` (sequential object IDs): https://sourceforge.net/p/minidlna/git/ci/1a9b32ee7a1c89e54e9f148199b73f9b33ad45ba/tree/scanner.c (archived copy: [Software Heritage](https://archive.softwareheritage.org/swh:1:cnt:f240a2f6c97b595db863ae8ef8ba4badf4b2ecc4;origin=https://git.code.sf.net/p/minidlna/git;anchor=swh:1:rev:1a9b32ee7a1c89e54e9f148199b73f9b33ad45ba;path=/scanner.c))
 - Gerbera `cont_dir_service.cc` (Search, TotalMatches, update IDs): https://github.com/gerbera/gerbera/blob/cce1d4025640941e543dd8f578f9158fabd90019/src/upnp/cont_dir_service.cc
 - Jellyfin DLNA plugin `ControlHandler.cs` (Search, SearchCaps, TotalMatches): https://github.com/jellyfin/jellyfin-plugin-dlna/blob/21cd9fcee1b9bc017e766de4d10111a9deb71d5d/src/Jellyfin.Plugin.Dlna/ContentDirectory/ControlHandler.cs
 - Jellyfin DLNA plugin `DidlBuilder.cs` (no `refID`): https://github.com/jellyfin/jellyfin-plugin-dlna/blob/21cd9fcee1b9bc017e766de4d10111a9deb71d5d/src/Jellyfin.Plugin.Dlna/Didl/DidlBuilder.cs
 - Jellyfin `LibraryManager.cs` (ID = MD5(type + path)): https://github.com/jellyfin/jellyfin/blob/a45d1415d4da7c9b69d6e7a6895fc63d2d68e8f1/Emby.Server.Implementations/Library/LibraryManager.cs
 - Jellyfin 10.9.0 release (DLNA moved to plugin): https://jellyfin.org/posts/jellyfin-release-10.9.0/
 - Jellyfin DLNA docs: https://jellyfin.org/docs/general/post-install/networking/dlna/
-- Kodi `UPnPServer.cpp` (class-only search): https://github.com/xbmc/xbmc/blob/0929e56b09c852df85669e5c421d2a75b84b2f4d/xbmc/network/upnp/UPnPServer.cpp
-- Kodi `UPnPInternal.cpp` (`refID`): https://github.com/xbmc/xbmc/blob/0929e56b09c852df85669e5c421d2a75b84b2f4d/xbmc/network/upnp/UPnPInternal.cpp
+- Kodi `UPnPServer.cpp` (class-only search): https://github.com/xbmc/xbmc/blob/0929e56b09c852df85669e5c421d2a75b84b2f4d/xbmc/network/upnp/UPnPServer.cpp (archived copy: [Software Heritage](https://archive.softwareheritage.org/swh:1:cnt:0dc2843dfb6cc21f856896546c04d754727ee862;origin=https://github.com/xbmc/xbmc;anchor=swh:1:rev:0929e56b09c852df85669e5c421d2a75b84b2f4d;path=/xbmc/network/upnp/UPnPServer.cpp))
+- Kodi `UPnPInternal.cpp` (`refID`): https://github.com/xbmc/xbmc/blob/0929e56b09c852df85669e5c421d2a75b84b2f4d/xbmc/network/upnp/UPnPInternal.cpp (archived copy: [Software Heritage](https://archive.softwareheritage.org/swh:1:cnt:db3b5cbd84cf4524108512cddb5b3cbbae80dc65;origin=https://github.com/xbmc/xbmc;anchor=swh:1:rev:0929e56b09c852df85669e5c421d2a75b84b2f4d;path=/xbmc/network/upnp/UPnPInternal.cpp))
 - UMS `UmsContentDirectoryService.java` (search capabilities, SystemUpdateID): https://github.com/UniversalMediaServer/UniversalMediaServer/blob/1b1cb16dce26a40da3774bf3bc31202a1049e25d/src/main/java/net/pms/network/mediaserver/jupnp/support/contentdirectory/UmsContentDirectoryService.java
 - UMS `MediaStoreIds.java` (persistent IDs): https://github.com/UniversalMediaServer/UniversalMediaServer/blob/1b1cb16dce26a40da3774bf3bc31202a1049e25d/src/main/java/net/pms/store/MediaStoreIds.java
 - MinimServer, UPnP and DLNA (no standard browse tree): https://minimserver.com/upnpav.html
